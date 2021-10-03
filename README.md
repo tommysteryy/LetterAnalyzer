@@ -1,4 +1,4 @@
-#Letter Analysis 
+# Letter Analysis 
 ### A NLP Project by Tommy Xu
 
 Upon using various math textbooks throughout my first few years of
