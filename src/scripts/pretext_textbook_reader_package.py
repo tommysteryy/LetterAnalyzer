@@ -17,10 +17,13 @@ def words(url):
                      .translate(str.maketrans("", "", string.punctuation)).split(" "))
 
     lowords_lst = []
+
     for word in lowords:
         if word.isdigit():
             continue
-        if len(word) == 0:
+        elif len(word) == 0:
+            continue
+        elif not re.match("[[\x41-\x5A]|[\x61-\x7A]]*", word):
             continue
         elif word[0].isdigit():
             lowords_lst.append(word[1:])
