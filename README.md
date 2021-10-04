@@ -2,8 +2,8 @@
 ### A NLP Project by Tommy Xu
 
 Upon using various math textbooks throughout my first few years of
-university studying Statistics & Computer Science, I was (like many
- others) truly humbled by the use of letters in higher level mathematics. 
+university studying Statistics & Computer Science, I (like many others) was
+truly humbled by the use of letters in higher level mathematics. 
 It starts with "f", "x", and "y" in high school, then we add on "z" and "w" in
 university calculus, then a bunch of "a", "b", "c" for arbitrary integers and 
 "g" and "h" for relations & functions in discrete mathematics. This sounds simple, but
