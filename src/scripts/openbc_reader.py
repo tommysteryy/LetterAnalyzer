@@ -6,7 +6,6 @@ import re
 import matplotlib.pyplot as plt
 from openbc_reader_package import words, letters, common_string, gen_title
 
-
 url1 = input('What is the first url of the textbook? ')
 url2 = input("What is another url of the textbook? ")
 
@@ -37,22 +36,22 @@ word_counter = Counter(all_words)
 
 letter_dict = {}
 for key in sorted(letter_counter.keys()):
-	letter_dict[key] = letter_counter[key]
-    
+    letter_dict[key] = letter_counter[key]
+
 word_dict = {}
 for key in sorted(word_counter.keys()):
-	word_dict[key] = word_counter[key]
+    word_dict[key] = word_counter[key]
 
-df_letters = pd.DataFrame(list(letter_dict.items()), columns = ["Letter", "Frequency"])
-df_words = pd.DataFrame(list(word_dict.items()), columns = ["Word", "Frequency"])
+df_letters = pd.DataFrame(list(letter_dict.items()), columns=["Letter", "Frequency"])
+df_words = pd.DataFrame(list(word_dict.items()), columns=["Word", "Frequency"])
 
 author_name = "OpenBCEducation"
 title_name = gen_title(url1)
 
-letters_name = 'Textbook_Data\\' + title_name + "_" + author_name +'_LetterData.csv'
-words_name = 'Textbook_Data\\' + title_name + "_" + author_name +'_WordData.csv'
+letters_name = 'textbook_data/' + title_name + "_" + author_name + '_LetterData.csv'
+words_name = 'textbook_data/' + title_name + "_" + author_name + '_WordData.csv'
 
-df_letters.to_csv(letters_name, index = False)
-df_words.sort_values(by = 'Frequency', ascending = False).to_csv(words_name, index = False)
+df_letters.to_csv(letters_name, index=False)
+df_words.sort_values(by='Frequency', ascending=False).to_csv(words_name, index=False)
 
-print(f'Your two files have now been saved in "Textbook_Data", with names {letters_name} and {words_name}')
+print(f'Your two files have now been saved in "textbook_data", with names {letters_name} and {words_name}')
