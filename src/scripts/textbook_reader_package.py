@@ -12,7 +12,8 @@ def words(url):
     req = requests.get(url)
     soup = bs4.BeautifulSoup(req.text, 'lxml')
     
-    lowords = filter(lambda x: x != " ", soup.get_text().lower().replace('\n', ' ').translate(str.maketrans("", "", string.punctuation)).split(" "))
+    lowords = filter(lambda x: x != " ", soup.get_text().lower().replace('\n', ' ')
+                     .translate(str.maketrans("", "", string.punctuation)).split(" "))
     
     lowords_lst = []
     for word in lowords:
@@ -45,9 +46,18 @@ def gen_title(url):
     '''
     req = requests.get(url)
     soup = bs4.BeautifulSoup(req.text, 'lxml')
-    title = soup.select('.BookBanner__TopBar-sc-1avy0c0-1.jVswHX')[0].select('a')[0].getText()
+    title = soup.select('.title')[0].get_text()
     title_clean = title.translate(str.maketrans("", "", string.punctuation)).replace(' ', '')
     return title_clean
+
+def gen_author(url):
+    '''
+    Given the url of a PreTeXT textbook website in 'lxml' form, return a string for the title of the textbook
+    '''
+    req = requests.get(url)
+    soup = bs4.BeautifulSoup(req.text, 'lxml')
+    author = soup.select('.byline')[0].get_text().translate(str.maketrans("", "", string.punctuation)).replace(' ', '')
+    return author
 
 def common_string(string1, string2):
     """

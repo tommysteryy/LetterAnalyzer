@@ -6,7 +6,6 @@ import re
 from collections import Counter
 from textbook_reader_package import gen_title, words, letters, common_string, gen_author
 
-
 start_url = input('What is the url of the first page of the textbook? ')
 end_url = input('What is the url of the last page of the textbook? ')
 
@@ -38,19 +37,19 @@ word_counter = Counter(all_words)
 
 letter_dict = {}
 for key in sorted(letter_counter.keys()):
-	letter_dict[key] = letter_counter[key]
-    
+    letter_dict[key] = letter_counter[key]
+
 word_dict = {}
 for key in sorted(word_counter.keys()):
-	word_dict[key] = word_counter[key]
+    word_dict[key] = word_counter[key]
 
-df_letters = pd.DataFrame(list(letter_dict.items()), columns = ["Letter", "Frequency"])
-df_words = pd.DataFrame(list(word_dict.items()), columns = ["Word", "Frequency"])
+df_letters = pd.DataFrame(list(letter_dict.items()), columns=["Letter", "Frequency"])
+df_words = pd.DataFrame(list(word_dict.items()), columns=["Word", "Frequency"])
 
-letters_name = 'Textbook_Data\\' + textbook_title + '_' + textbook_author + '_LetterData.csv'
-words_name = 'Textbook_Data\\' + textbook_title + '_' + textbook_author + '_WordData.csv'
+letters_name = 'textbook_data/' + textbook_title + '_' + textbook_author + '_LetterData.csv'
+words_name = 'textbook_data/' + textbook_title + '_' + textbook_author + '_WordData.csv'
 
-df_letters.to_csv(letters_name, index = False)
-df_words.sort_values(by = 'Frequency', ascending = False).to_csv(words_name, index = False)
+df_letters.to_csv(letters_name, index=False)
+df_words.sort_values(by='Frequency', ascending=False).to_csv(words_name, index=False)
 
-print(f'Your two files have now been saved in "Textbook_Data", with names {letters_name} and {words_name}')
+print(f'Your two files have now been saved in "textbook_data", with names {letters_name} and {words_name}')
