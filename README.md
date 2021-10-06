@@ -16,8 +16,6 @@ Also, It seemed to me that **letter usage (particularly of "x", "y", "z", and ot
 in math textbooks increased as we increased the difficulty (and usually the level of abstraction) 
 of the course**. This led to my main research questions.
 
-test change 
-
 ### Main Questions
 
 1) Are there statistical differences between letter usage patterns of math textbooks 
@@ -25,7 +23,7 @@ test change
    
 
 
-2) Are there differences in letter usage patterrns between mathematics textbooks and textbooks 
+2) Are there differences in letter usage patterns between mathematics textbooks and textbooks 
    in *other* fields? 
 
 
@@ -50,8 +48,8 @@ The non-mathematics textbook topics were US History, Business Law, Sociology, Ec
 
 ### Viewer Guide
 1) To explore how I read online textbooks using Python, see "Math Textbooks vs The World [1] - Data Collection".
-2) To explore how the exploratory data analysis, see "Math Textbooks vs The World [2] - Data Exploration" (IN PROGRESS)
-3) To explore the answers to the above questions, see "Math Textbooks vs The World [3] - Data Analysis" (IN PROGRESS)
+2) To explore how the exploratory data analysis, see "Math Textbooks vs The World [2] - Data Exploration" (In Prog.)
+3) To explore the answers to the above questions, see "Math Textbooks vs The World [3] - Data Analysis" (In Prog.)
 
 ### Sources & Help
 
