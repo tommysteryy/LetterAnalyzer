@@ -1,4 +1,4 @@
-# Letter Analysis 
+# Language Usage Patterns in Math Textbooks: Normal or Not?
 ## A NLP Project by Tommy Xu
    
 ### Inspiration
