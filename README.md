@@ -1,4 +1,4 @@
-#Letter Analysis 
+# Letter Analysis 
 ## A NLP Project by Tommy Xu
    
 ### Inspiration
