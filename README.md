@@ -1,6 +1,8 @@
 # Language Usage Patterns in Math Textbooks: Normal or Not?
 
-![percentages_graph](./data/percentages_graph.png)
+[comment]: <> (![percentages_graph]&#40;./data/percentages_graph.png&#41;)
+
+![percentages_graph](./data/compare-all.png)
 
 [comment]: <> (![compare_graph]&#40;./data/compare_math_non-math.png&#41;)
    
