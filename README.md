@@ -1,6 +1,4 @@
 # Language Usage Patterns in Math Textbooks: Normal or Not?
-## A NLP Project by Tommy Xu
-End Products:
 
 [comment]: <> (![percentages_graph]&#40;./data/percentages_graph.png&#41;)
 
