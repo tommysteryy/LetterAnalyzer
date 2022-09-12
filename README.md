@@ -4,7 +4,7 @@
 
 ![percentages_graph](./data/compare-all.png)
 
-[comment]: <> (![compare_graph]&#40;./data/compare_math_non-math.png&#41;)
+
    
 ### Inspiration
 Upon using various math textbooks throughout my first few years of university studying Statistics & Computer Science, I was (like many others) truly humbled by the use of letters in higher level mathematics. It starts with "f", "x", and "y" in high school, then we add on "z" and "w" in university calculus, then a bunch of "a", "b", "c" for arbitrary integers and "g" and "h" for relations & functions in discrete mathematics. 
@@ -31,6 +31,16 @@ non math one, simply based on the letter frequencies? Or a classification algori
 1) To explore how I read online textbooks using Python, see "Math Textbooks vs The World [1] - Data Collection".
 2) To see the exploratory data analysis, see "Math Textbooks vs The World [2] - Data Exploration"
 3) To explore the answers to the above questions, see "Math Textbooks vs The World [3] - Data Analysis" (In Prog.)
+
+
+## Key Findings & Visualizations:
+1) The language usage of *most* letters in the alphabet is quite **similar** in math textbooks and non-math textbooks, as illustrated in the leading figure.
+2) The most significant difference is the letter *x*. Math textbooks used it more than **5 times more** on average (yes, I doubled checked the numbers).
+3) On average, the letters that were more common in **math-y** texts than in non-math-y texts were *x* (+523%), *z* (+99%), *f* (+49%), and *y* (21.8%) in relative measures.
+4) Letters that were more common in **non-mathy** texts were *k* (+46%), *g* (+16%), *m* (+15%), and *c* (+13%), in relative measures.
+
+![compare_graph](./data/compare_math_non-math-small.png)
+
 
 ### Sources & Help
 The mathematics textbooks explored include algebra, calculus, and statistics, and will mostly use textbooks by the same team for different year levels. The non-mathematics textbook topics were US History, Business Law, Sociology, Economics, and Psychology. 
