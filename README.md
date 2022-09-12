@@ -38,9 +38,10 @@ non math one, simply based on the letter frequencies? Or a classification algori
 2) The most significant difference is the letter *x*. Math textbooks used it more than **5 times more** on average (yes, I doubled checked the numbers).
 3) On average, the letters that were more common in **math-y** texts than in non-math-y texts were *x* (+523%), *z* (+99%), *f* (+49%), and *y* (21.8%) in relative measures.
 4) Letters that were more common in **non-mathy** texts were *k* (+46%), *g* (+16%), *m* (+15%), and *c* (+13%), in relative measures.
-
+5) The biggest difference of non-mathy and math-y books is between v-z, as shown below
 ![compare_graph](./data/compare_math_non-math-small.png)
-
+6) With harder math textbooks, there is generally an increase of v, x, and z usage, but it's not very consistent.
+![compare-math-graph](./data/compare-diff-math-level-small.png)
 
 ### Sources & Help
 The mathematics textbooks explored include algebra, calculus, and statistics, and will mostly use textbooks by the same team for different year levels. The non-mathematics textbook topics were US History, Business Law, Sociology, Economics, and Psychology. 
